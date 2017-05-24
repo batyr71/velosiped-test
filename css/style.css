@@ -1,0 +1,374 @@
+
+@font-face {font-family: 'MuseoSansRounded-900';src: url('webfonts/337D35_0_0.eot');src: url('webfonts/337D35_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/337D35_0_0.woff2') format('woff2'),url('webfonts/337D35_0_0.woff') format('woff'),url('webfonts/337D35_0_0.ttf') format('truetype');}
+@font-face {font-family: 'MuseoSansRounded-100';src: url('webfonts/337D35_1_0.eot');src: url('webfonts/337D35_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/337D35_1_0.woff2') format('woff2'),url('webfonts/337D35_1_0.woff') format('woff'),url('webfonts/337D35_1_0.ttf') format('truetype');}
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+
+}
+
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+
+    
+}
+
+#main {
+	transition: 0.3s;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo {
+    position: fixed;
+    margin-top: 1%;
+    position: fixed;
+    top: 1%;
+    left: 46%;
+
+}
+
+.middlerow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 0;
+}
+
+
+.creative, .brand {
+	font-family: MuseoSansRounded-900, sans-serif;
+	font-size: 4vw;
+	line-height: 1.2;
+	color: #ffffff;
+}
+
+.brand {
+    text-align: right;
+    margin-right: 1%;
+}
+
+.creative {
+    text-align: left;
+    margin-left: 1%;
+}
+
+.nav {
+	width: 144px;
+ 	height: 144px;
+  	border: solid 1px rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-border {
+    width: 60px;
+    height: 60px;
+    border: solid 2px #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.company>p {
+    font-family: MuseoSansRounded-900;
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.line {
+    margin: 0 auto;
+    width: 1px;
+    height: 22px;
+    border: solid 1px #ffffff;
+}
+
+#leftbar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: black;
+	overflow-x: hidden;
+	transition: 0.3s;
+}
+
+#rightbar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: black;
+	overflow-x: hidden;
+	transition: 0.3s;
+}
+
+
+.leftnav {
+	height: 100%;
+	width: 40%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.rightnav {
+	height: 100%;
+	width: 40%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	opacity: 0;
+}
+
+.list {
+	height: 100%;
+
+}
+
+#leftbar::-webkit-scrollbar {
+	display: none;
+}
+
+#rightbar::-webkit-scrollbar {
+	display: none;
+}
+
+.project {
+	position: relative;
+	width: 100%;
+	height: 20%;
+    
+}
+
+.project-right {
+	position: relative;
+	width: 100%;
+	height: 20%;
+    
+}
+
+
+.label {
+	padding-left: 25%;
+    padding-top: 10%;
+    font-family: MuseoSansRounded-900;
+    font-size: 1vw;
+    font-weight: 900;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.label-right {
+	padding-right: 25%;
+    padding-top: 10%;
+    font-family: MuseoSansRounded-900;
+    font-size: 1vw;
+    font-weight: 900;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: right;
+}
+
+.client {
+    letter-spacing: 1.9px;
+}
+.client span {
+    font-style: italic;
+    font-family: serif;
+    
+}
+
+.name {
+  font-size: 1.5vw;
+  line-height: 1.33;
+  letter-spacing: 0.6px;
+}
+.gif {
+	position: absolute;
+	bottom: 0;
+	left: -80%;
+	right: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	transition: .5s ease;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.gif-right {
+	position: absolute;
+	bottom: 0;
+	left: 80%;
+	right: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	transition: .5s ease;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.pic, .pic-right {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+.project:hover .gif {
+	left: 0;
+}
+
+.project-right:hover .gif-right {
+	left: 0;
+}
+
+.link {
+	white-space: nowrap;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) ;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+
+.link a {
+    width: 10px;
+    height: 10px;
+}
+
+.eye {
+    padding: 10px;    
+}
+
+.button-left, .button-right {
+    width: 11%;
+ 	height: 8%;
+  	border-radius: 1px;
+  	background-color: #f8574a;
+  	bottom: 15px;
+  	position: fixed;
+  	display: none;
+    text-align: center;
+    padding: 1.3% 0 0 0;
+}
+
+.button-left a, .button-right a  {
+  	font-family: MuseoSansRounded-900;
+  	font-size: 1vw;
+  	font-weight: 900;
+  	letter-spacing: 0.8px;
+    color: white;
+    text-decoration: none;
+}
+
+.button-left:hover{
+    background-color: #ec2c1c;
+}
+
+.button-right:hover{
+    background-color: #ec2c1c;
+}
+
+@media only screen and (max-width: 375px) {
+    .icon {
+	width: 72px;
+ 	height: 72px;
+    }
+
+    .icon-border {
+    width: 30px;
+    height: 30px;
+    }
+}
+
+
